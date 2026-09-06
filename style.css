@@ -9,41 +9,31 @@ html,body{
     width: 100%;
     height: 100%;
 }
-body{
-    padding: 3rem;
-    background-color: black;
-}
-#main{
+main{
+    height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-input{
-    text-transform: capitalize;
-    padding: 12px 22px;
-    display: flex;
-    flex-direction: column;
-   margin-bottom: 20px;
-   border-radius: 20px;
-   border: 2px solid greenyellow;
-}
-#submit:active{
-    scale: 0.95;
-}
-.card{
-    width: fit-content;
     padding: 1rem;
-    box-shadow: 0px 0px 10px white;
-    border-radius: 10px;
-    color: white;
+    background: linear-gradient(to right bottom,black,rgba(0, 0, 0, 0.9));
 }
-.card img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 40px red;
+section{
+    box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.242);
+    width: 400px;
+    height: 100%;
+    border-radius: 12px;
+    margin: auto;
 }
-.card h2{
-    color: orangered;
+.all-reels{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.reel{
+     object-fit: cover;
+        width: 100%;
+    height: 100%;
+}
+.reel img{
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
 }
