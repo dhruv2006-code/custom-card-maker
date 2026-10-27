@@ -24,13 +24,13 @@ form{
     justify-content: space-evenly;
     background-color: rgb(179, 93, 8);
 }
-#submit{
+button{
     padding: 4px 0px;
     border: 1px solid white;
     background-color: black;
     color:white;
 }
-#submit:active{
+button:active{
     scale: 0.90;
   
 }
@@ -41,6 +41,7 @@ input{
     color: white;
 }
 #complete{
+    display: none;
     align-self: center;
     color: green;
 }
