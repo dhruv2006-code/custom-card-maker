@@ -11,4 +11,48 @@
         body{
             background-color: black;
             color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
+form{
+    width: 400px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-evenly;
+    background-color: rgb(179, 93, 8);
+}
+#submit{
+    padding: 4px 0px;
+    border: 1px solid white;
+    background-color: black;
+    color:white;
+}
+#submit:active{
+    scale: 0.90;
+  
+}
+input{
+    padding: 10px 12px;
+    background-color: rgba(0, 0, 128, 0.374);
+    border: none;
+    color: white;
+}
+#complete{
+    align-self: center;
+    color: green;
+}
+h5{
+    color: red;
+}
+#emailError{
+    display: none;
+    color: red;
+}
+
+#passwordError{
+    display: none;
+    color: red;
+}
