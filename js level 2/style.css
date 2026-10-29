@@ -15,45 +15,26 @@
             align-items: center;
             justify-content: center;
           }
-form{
-    width: 400px;
-    padding: 12px;
+.dwn-box{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
     flex-direction: column;
-    gap: 10px;
-    justify-content: space-evenly;
-    background-color: rgb(179, 93, 8);
+    background-color: rgba(67, 68, 68, 0.457);
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
 }
-button{
-    padding: 4px 0px;
-    border: 1px solid white;
-    background-color: black;
-    color:white;
+.bar{
+    width: 200px;
+    height: 10px;
+    background-color: rgba(136, 135, 135, 0.621);
+    border-radius: 50px;
 }
-button:active{
-    scale: 0.90;
-  
-}
-input{
-    padding: 10px 12px;
-    background-color: rgba(0, 0, 128, 0.374);
-    border: none;
-    color: white;
-}
-#complete{
-    display: none;
-    align-self: center;
-    color: green;
-}
-h5{
-    color: red;
-}
-#emailError{
-    display: none;
-    color: red;
-}
-
-#passwordError{
-    display: none;
-    color: red;
+.pgs-bar{
+    width: 2%;
+    height: 9px;
+    background-color: white;
+    border-radius: 50px;
 }
