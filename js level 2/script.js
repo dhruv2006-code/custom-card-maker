@@ -12,3 +12,9 @@ let intv = setInterval(() => {
         document.querySelector('h2').textContent = "Downloaded"
     }
 },(seconds*1000) /100);
+
+let dwn = document.querySelector('.dwn-box');
+
+setTimeout(() => {
+    dwn.style.display = "none";
+}, 6000);
