@@ -11,30 +11,14 @@
         body{
             background-color: black;
             color: white;
+            gap: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
           }
-.dwn-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    flex-direction: column;
-    background-color: rgba(67, 68, 68, 0.457);
-    width: 400px;
-    height: 200px;
-    border-radius: 15px;
-}
-.bar{
-    width: 200px;
-    height: 10px;
-    background-color: rgba(136, 135, 135, 0.621);
-    border-radius: 50px;
-}
-.pgs-bar{
-    width: 2%;
-    height: 9px;
-    background-color: white;
-    border-radius: 50px;
+button{
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
 }
