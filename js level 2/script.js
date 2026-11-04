@@ -6,7 +6,7 @@ const users = [
     bio: "Frontend developer passionate about creating beautiful websites."
   },
   {
-    name: "Aarav Sharma",
+    name: "Azeem ahmed",
     pic: "https://i.pravatar.cc/150?img=11",
     img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500",
     bio: "Creative designer who loves UI/UX and exploring new ideas."
@@ -18,7 +18,7 @@ const users = [
     bio: "Full-stack developer | Tech enthusiast | Lifelong learner."
   },
   {
-    name: "Rohan Mehta",
+    name: "rihan",
     pic: "https://i.pravatar.cc/150?img=13",
     img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500",
     bio: "Building digital products and sharing my coding journey."
@@ -31,9 +31,9 @@ const users = [
   }
 ];
 let allCards = document.querySelector(".cards")
-function showUsers (){
+function showUsers (arr){
     let clutter = "";
-    users.forEach(function(usr){
+  arr.forEach(function(usr){
         clutter+= `<div class="card">
                 <img src="${usr.img}" alt="" class="bg-img">
                 <div class="content">
@@ -41,8 +41,17 @@ function showUsers (){
                     <p>${usr.bio}</p>
                 </div>
             </div>`
-        allCards.innerHTML = clutter;
         })
-}
-showUsers()
+        allCards.innerHTML = clutter;
 
+}
+showUsers(users)
+
+let search = document.querySelector(".search")
+search.addEventListener('input', function(){
+   let newUsers = users.filter(function(user){
+    return user.name.toLowerCase().includes(search.value.toLowerCase());
+   })
+   allCards.innerHTML = '';
+    showUsers(newUsers)
+})
