@@ -21,7 +21,6 @@ function themeSwitch (){
               document.body.classList.add("dark")
          document.body.classList.remove("light")
                 }
-
     }
     else{
         document.body.classList.remove("dark")
