@@ -12,6 +12,13 @@ const users = [
     bio: "Creative designer who loves UI/UX and exploring new ideas."
   },
   {
+    name: "Azan ahmed",
+    pic: "https://i.pravatar.cc/150?img=11",
+    img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500",
+    bio: "Creative designer who loves UI/UX and exploring new ideas."
+  },
+  
+  {
     name: "Priya Verma",
     pic: "https://i.pravatar.cc/150?img=47",
     img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500",
