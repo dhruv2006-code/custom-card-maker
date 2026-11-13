@@ -12,12 +12,40 @@
 />
 </head>
 <body>
+    <div class="showform">
     <div class="formContainer">
-        <h1 class="meetingForm">Meeting form</h1>
-        <h1>Image Url : </h1>
+        <h2 class="meetingForm">Meeting form</h2>
+        <h2>Image Url : </h2>
         <input class="imgUrl" type="text" placeholder="Paste Your Image Url">
-        <h1>Name : </h1>
+        <h2>Name : </h2>
         <input class="Name" type="text" placeholder="Name Of the Person">
+        <h2>Work : </h2>
+        <input class="agenda" type="text" placeholder="Purpose">
+        <div class="category">
+
+    <label for="urgent">
+        <input type="radio" id="urgent" name="category" value="urgent">
+        Urgent
+    </label>
+
+    <label for="less-urgent">
+        <input type="radio" id="less-urgent" name="category" value="less-urgent">
+        Less Urgent
+    </label>
+
+    <label for="delayed">
+        <input type="radio" id="delayed" name="category" value="delayed">
+        Can Be Delayed
+    </label>
+
+    <label for="not-important">
+        <input type="radio" id="not-important" name="category" value="not-important">
+        Not Important
+    </label>
+</div>
+    <input id="submit" type="submit" value="Create">
+    <button class="close">Close</button>
+    </div>
     </div>
     <div class="left-icon">
         <i class="ri-add-fill"></i>
@@ -35,7 +63,7 @@
                 <h5 class="mainwork">Work</h5>
                 <h3 class="typeWork">Call</h3>
                 </div>
-                <div class="category">
+                <div class="finalCategory">
                 <h5 class="mainCategory">Category</h5>
                 <h3 class="urgencyType">Emergency</h3>
             </div>
