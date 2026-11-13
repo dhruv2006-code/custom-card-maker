@@ -16,6 +16,31 @@ body {
   color: white;
   gap: 20px;
 }
+.formContainer{
+  position: absolute;
+  width: 40%;
+  background-color: black;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+.meetingForm{
+  align-self: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+input{
+  padding: 1rem;
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid orange;
+  background-color: black;
+  color: white;
+}
 .personal{
   display: flex;
   gap: 30px;
