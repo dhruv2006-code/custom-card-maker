@@ -5,15 +5,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search Users</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
 </head>
-
 <body>
-    <div class="flex flex-col gap-10 items-center">
-        <input class="search px-5 py-5 rounded outline-none bg-[#111] text-[#888]" type="text" placeholder="Search...">
-        <div class="cards flex gap-10">
+    <div class="form">
+    </div>
+    <div class="left-icon">
+        <i class="ri-add-fill"></i>
+        <i class="ri-arrow-up-s-line"></i>
+        <i class="ri-arrow-down-s-line"></i>
+    </div>
+    <div class="cards">
+        <div class="card-container">
+            <div class="personal">
+            <img class="profile" src="https://i.pinimg.com/1200x/24/b3/7b/24b37b71fbe6c5e0521594083988d33c.jpg" alt="">
+            <h3 class="name">Rebecca</h3>
+            </div>
+            <div class="other">
+                <div class="work">
+                <h5 class="mainwork">Work</h5>
+                <h3 class="typeWork">Call</h3>
+                </div>
+                <div class="category">
+                <h5 class="mainCategory">Category</h5>
+                <h3 class="urgencyType">Emergency</h3>
+            </div>
+            </div>
         </div>
+    </div>
+    <div class="right">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
     </div>
     <script src="script.js"></script>
 </body>
