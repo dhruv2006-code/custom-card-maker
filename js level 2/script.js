@@ -128,10 +128,12 @@ finalCategory.append(mainCategory, urgencyType);
 
 // Append work and category inside other
 other.append(work, finalCategory);
-
+let card = document.createElement('div')
+card.classList.add('card')
+card.append(personal,other)
 
 // Final append to your main parent
-document.querySelector(".cards").append(personal, other);
+document.querySelector(".card-container").append(card);
    })
    
 }
