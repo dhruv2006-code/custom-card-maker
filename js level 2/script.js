@@ -12,6 +12,9 @@ const agendaInp = document.querySelector(".agenda");
 const category = document.querySelectorAll('input[name="category"]');
 const submit = document.querySelector("#submit"); 
 
+const cardContainer  = document.querySelector('.card-container');
+const upBtn = document.querySelector('.upBtn')
+const downBtn = document.querySelector('.downBtn')
 // Event Listeners
 add.addEventListener("click",function(){
     showform.style.display = "initial"
@@ -137,6 +140,36 @@ document.querySelector(".card-container").append(card);
    })
    
 }
-
 makeCards()
-console.log(document.querySelector(".cards"));
+
+function updateCard(){
+     
+    let cards= document.querySelectorAll(".card-container .card");
+    
+card.forEach(function(card,index){
+            card.style.zIndex = `${3 - i}`;
+        card.style.transform = `translateY(${i*10}px) scale(${1-i*0.02})`
+        card.style.opacity = `${1-i*0.02}`
+}) 
+}
+
+upBtn.addEventListener("click",function(){
+    let lastChild = cardContainer.lastElementChild;
+   if(lastChild){
+     cardContainer.insertBefore(lastChild, cardContainer.firstElementChild)
+    updateCard()
+   
+    };
+    // update
+})
+
+downBtn.addEventListener("click",function(){
+let firstChild = cardContainer.firstElementChild;
+if(firstChild){
+cardContainer.insertBefore(firstChild, cardContainer.lastElementChild);
+    // update
+    updateCard()
+    
+}
+    
+})
